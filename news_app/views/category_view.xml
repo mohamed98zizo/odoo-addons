@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_form_category" model="ir.ui.view">
+        <field name="name">category Form</field>
+        <field name="model">news.category</field>
+        <field name="arch" type="xml">
+            <form string="Category">
+                <group>
+                    <field name="tittle"/>
+                    <field name="article_ids" widget="many2many_tags"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_tree_category" model="ir.ui.view">
+        <field name="name">Category</field>
+        <field name="model">news.category</field>
+        <field name="arch" type="xml">
+            <tree colors="decoration-muted:is_done==True">
+                <field name="tittle"/>
+
+
+            </tree>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="news_group_rule" model="res.groups">
+    <field name="name">manager</field>
+    </record>
+ <record id="news_user_rule" model="res.groups">
+    <field name="name">users</field>
+
+    </record>
+
+
+</odoo>

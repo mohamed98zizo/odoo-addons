@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <act_window id="action_news_tag"
+                name="tag"
+                res_model="news.tags"
+                view_mode="tree,form"
+
+    />
+
+
+
+    <menuitem id="menu_tag"
+              name="tag"
+              action="action_news_tag"
+              parent="menu_article"
+
+    />
+</odoo>

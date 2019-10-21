@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_form_article" model="ir.ui.view">
+        <field name="name">article Form</field>
+        <field name="model">news.article</field>
+        <field name="arch" type="xml">
+            <form string="Article ">
+                <header>
+
+                </header>
+                <sheet>
+                    <group name="group top">
+
+                        <group name="group left">
+
+
+                            <field name="date"/>
+                            <field name="tittle"/>
+                            <field name="author_ids" widget="many2many_tags"/>
+                            <field name="tags_ids" widget="many2many_tags"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="summary"/>
+                            <field name="thumbnail" widget="image"/>
+
+
+                        </group>
+                        <field name="body"/>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_tree_article" model="ir.ui.view">
+        <field name="name">Article</field>
+        <field name="model">news.article</field>
+        <field name="arch" type="xml">
+            <tree colors="decoration-muted:is_done==True">
+                <field name="tittle"/>
+                <field name="date"/>
+                <field name="summary"/>
+
+            </tree>
+        </field>
+    </record>
+    <record id="view_filter_news" model="ir.ui.view">
+        <field name="name">news Filter</field>
+        <field name="model">news.article</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="tittle"/>
+                <field name="date"/>
+                <field name="summary"/>
+                <field name="author_ids"/>
+
+
+            </search>
+
+        </field>
+    </record>
+
+
+</odoo>

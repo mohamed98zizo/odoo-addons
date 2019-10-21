@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <act_window id="action_news_article"
+                name="article"
+                res_model="news.article"
+                view_mode="tree,form"
+    />
+
+
+    <menuitem id="menu_article"
+              name="newsapp"
+              action="action_news_article"
+    />
+    <menuitem id="menu_articles"
+              name="article"
+              action="action_news_article"
+              parent="menu_article"
+
+              />
+</odoo>

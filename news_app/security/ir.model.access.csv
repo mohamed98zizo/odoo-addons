@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+newsarticle_manger, news.article.manger,news_app.model_news_article,news_app.news_group_rule,1,1,1,1
+newstag_manger, news.tags.manger,news_app.model_news_tags,news_app.news_group_rule,1,1,1,1
+newscategory_manger, news.category.user,news_app.model_news_category,news_app.news_group_rule,1,1,1,1
+newsarticle_user, news.article.user,news_app.model_news_article,news_app.news_user_rule,1,1,1,1
+newstag_user, news.tags.user,news_app.model_news_tags,news_app.news_user_rule,1,0,0,0
+newscategory_user, news.category.user,news_app.model_news_category,news_app.news_user_rule,1,0,0,0
